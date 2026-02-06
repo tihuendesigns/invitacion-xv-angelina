@@ -1,0 +1,244 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f5f6fa;
+color:#333;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:url("img/fondo-principal.png") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+}
+
+.hero-content{
+position:relative;
+color:white;
+max-width:700px;
+padding:20px;
+}
+
+.hero h1{
+font-family:'Playfair Display', serif;
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-weight:300;
+margin-bottom:20px;
+}
+
+.intro-text{
+max-width:520px;
+margin:auto;
+line-height:1.7;
+font-size:18px;
+}
+
+/* SECCIONES */
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.section-title{
+font-family:'Playfair Display', serif;
+font-size:32px;
+margin-bottom:40px;
+}
+
+.section-title::after{
+content:"";
+width:60px;
+height:2px;
+background:#c9a46c;
+display:block;
+margin:10px auto;
+}
+
+/* GLASS */
+
+.glass{
+background:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border-radius:20px;
+margin:40px auto;
+width:90%;
+max-width:900px;
+padding:50px 20px;
+}
+
+/* EVENTOS */
+
+.event-grid{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.event-item{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.event-item span{
+font-size:28px;
+}
+
+/* BOTONES */
+
+.btn{
+display:inline-block;
+background:#c9a46c;
+color:white;
+padding:14px 30px;
+border-radius:30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+/* DRESS */
+
+.dress-grid{
+display:flex;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.dress-item img{
+width:120px;
+margin-bottom:15px;
+}
+
+.dress-title{
+font-weight:600;
+margin-bottom:5px;
+}
+
+.colors{
+margin-top:20px;
+}
+
+/* MUSICA Y REGALOS */
+
+.music-text,
+.gift-text{
+margin-bottom:20px;
+}
+
+.alias{
+font-size:22px;
+margin-top:10px;
+}
+
+/* FOOTER */
+
+.credits{
+padding:40px 20px;
+text-align:center;
+background:#111;
+color:white;
+}
+
+.insta-link{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin-top:10px;
+color:white;
+text-decoration:none;
+}
+
+.insta-icon{
+width:25px;
+}
+
+/* BRILLOS */
+
+body::after{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+background-image:radial-gradient(#ffd700 1px, transparent 1px);
+background-size:60px 60px;
+opacity:0.2;
+animation:sparkle 20s linear infinite;
+}
+
+@keyframes sparkle{
+from{background-position:0 0;}
+to{background-position:1000px 1000px;}
+}
+
+/* ANIMACION SCROLL */
+
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.fade-up.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero{
+height:90vh;
+}
+
+.event-grid{
+gap:30px;
+}
+
+.dress-grid{
+gap:40px;
+}
+
+}
