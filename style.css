@@ -130,6 +130,15 @@ transform:scale(1.05);
 background:#25D366;
 }
 
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
+
 /* DRESS */
 
 .dress-grid{
@@ -242,3 +251,4 @@ gap:40px;
 }
 
 }
+
